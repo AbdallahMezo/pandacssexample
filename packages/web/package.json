@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "@example/web",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "panda codegen",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@ark-ui/react": "^2.2.3",
+    "@example/core": "*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.36.1",
+    "@park-ui/panda-preset": "^0.36.1"
+  }
+}

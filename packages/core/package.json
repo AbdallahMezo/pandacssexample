@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "@example/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "types": "./dist/lib/index.d.ts"
+    }
+  }
+}
