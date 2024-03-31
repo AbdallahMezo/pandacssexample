@@ -4,16 +4,16 @@
 
 #### @example/core
 
-> npm run build:core
+``` npm run build:core ``` 
 
 #### root level
 
-> npm install
+``` npm install ```
 
 #### root level
 
-> npx panda cssgen --outfile ./styles.css 
-> npm run storybook
+``` npx panda cssgen --outfile ./styles.css  ```
+``` npm run storybook ```
 
 ### Issue
 
