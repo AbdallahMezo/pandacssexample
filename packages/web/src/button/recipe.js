@@ -1,20 +1,22 @@
-import { cva } from '../../styled-system/css';
-import { btnRecipe } from '@example/core';
+import { sharedObject } from "@example/core";
+import { cva } from "../../styled-system/css";
 
-export const button = cva({
-  base: {},
-  variants: {
-    variant: btnRecipe.variant,
-  },
-});
-
-export const buttonV2 = cva({
+export const buttonWithCva = cva({
   base: {},
   variants: {
     variant: {
       primary: {
-        backgroundColor: 'brand.900',
+        backgroundColor: "brand.900",
       },
+    },
+  },
+});
+
+export const buttonWithSharedObject = cva({
+  base: { color: "white" },
+  variants: {
+    variant: {
+      primary: sharedObject,
     },
   },
 });

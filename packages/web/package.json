@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "panda codegen",
+    "cssgen": "panda cssgen  --outfile ./styles.css",
     "build": "vite build"
   },
   "dependencies": {
