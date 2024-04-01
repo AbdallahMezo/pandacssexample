@@ -8,9 +8,6 @@
     "build": "vite build"
   },
   "exports": {
-    ".": {
-      "import": "./dist/esm/index.mjs",
-      "types": "./dist/lib/index.d.ts"
-    }
+    ".": "./src/index.js"
   }
 }
