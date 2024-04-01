@@ -1,17 +1,38 @@
-import React from 'react';
-import { Button } from './index';
-import { ButtonV2 } from './button-v2';
+import React from "react";
+import { ButtonFromConfigRecipe } from "./index";
+import { ButtonWithCva } from "./button-with-cva";
+import { buttonWithSharedObject } from "./recipe";
 
 export default {
-  title: 'Button',
+  title: "Button",
+};
+
+export const Both = {
+  render: () => {
+    return (
+      <>
+        <ButtonFromConfigRecipe variant="primary">
+          ButtonFromConfigRecipe
+        </ButtonFromConfigRecipe>
+        <ButtonWithCva variant="primary">ButtonWithCva</ButtonWithCva>
+        <div className={buttonWithSharedObject({ variant: "primary" })}>
+          With shared object
+        </div>
+      </>
+    );
+  },
 };
 
 export const NotWorking = {
   render: () => {
-    return <Button variant='primary'>Hello PandaCSS</Button>;
+    return (
+      <ButtonFromConfigRecipe variant="primary">
+        Hello PandaCSS
+      </ButtonFromConfigRecipe>
+    );
   },
 };
 
 export const Working = () => {
-  return <ButtonV2 variant='primary'>Hello PandaCSS</ButtonV2>;
+  return <ButtonWithCva variant="primary">Hello PandaCSS</ButtonWithCva>;
 };
