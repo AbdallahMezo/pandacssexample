@@ -8,6 +8,6 @@
     "build": "vite build"
   },
   "exports": {
-    ".": "./src/index.js"
+    ".": "./dist/index.mjs"
   }
 }
