@@ -25,6 +25,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build:core": "yarn workspace @example/core build",
+    "build:web": "yarn workspace @example/web build",
+    "build": "yarn run build:core && yarn run build:web",
     "prepare": "yarn workspace @example/web prepare"
   }
 }
