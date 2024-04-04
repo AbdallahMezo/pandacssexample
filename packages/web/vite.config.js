@@ -15,5 +15,6 @@ export default defineConfig({
         entryFileNames: '[name].mjs',
       },
     },
+    external: ['@example/core'],
   },
 });
