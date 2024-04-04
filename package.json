@@ -24,6 +24,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build:core": "yarn workspace @example/core build"
+    "build:core": "yarn workspace @example/core build",
+    "prepare": "yarn workspace @example/web prepare"
   }
 }
